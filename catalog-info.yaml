@@ -1,0 +1,23 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-springboot-5
+  description: version 5
+  annotations:
+    tektonci/build-namespace: my-springboot-5-dev
+    janus-idp.io/tekton: my-springboot-5
+    argocd/app-name: my-springboot-5-dev
+    backstage.io/kubernetes-id: my-springboot-5
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: ghrhdh1/my-springboot-5
+    quay.io/repository-slug: rhdh1/my-springboot-5
+  links:
+    - url: https://devspaces.apps.cluster-2tgsr.dynamic.redhatworkshops.io/#https://github.com/ghrhdh1/my-springboot-5
+      title: OpenShift Dev Spaces (VS Code editor)
+      icon: web
+spec:
+  type: service
+  system: development
+  lifecycle: production
+  owner: user:default/alexgroom
